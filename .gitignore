@@ -1,0 +1,15 @@
+# Ignore Python virtual environment
+venv/
+.env/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore large data files (optional)
+Data/Raw/
+Data/Processed/
+Models/
