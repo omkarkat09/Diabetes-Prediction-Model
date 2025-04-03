@@ -23,6 +23,7 @@ DiabetesPredictionModel/
 │   ├── random_forest_model.pkl  # Trained Random Forest model
 │   └── scaler.pkl         # Fitted StandardScaler
 ├── scripts/               # Python modules
+│   ├── __init__.py
 │   ├── config.py          # Configuration settings
 │   ├── preprocess.py      # Data preprocessing functions
 │   ├── train_model.py     # Model training and evaluation
