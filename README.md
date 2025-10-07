@@ -1,6 +1,6 @@
 # Diabetes Prediction Model
 
-A machine learning application that predicts diabetes risk based on health parameters, developed for a Novo Nordisk internship application.
+A machine learning application that predicts diabetes risk based on health parameters. 
 
 ## Project Overview
 
