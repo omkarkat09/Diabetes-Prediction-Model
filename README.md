@@ -10,8 +10,8 @@ This project implements a complete machine learning pipeline for diabetes predic
 - **Model Training**: Implementation of Random Forest classifier with hyperparameter tuning
 - **Model Evaluation**: Performance assessment using accuracy, ROC AUC, and classification reports
 - **Feature Importance**: Analysis of which health parameters contribute most to diabetes risk
-- **Web Application**: Flask-based interface for easy interaction with the model
-- **Explainable AI**: Visualization of how each feature contributes to individual predictions
+- **Web Application**: Modern, responsive Flask-based dashboard featuring a premium Glassmorphism UI
+- **Explainable AI & Visualizations**: Interactive Chart.js graphs (gauges and bar charts) visualizing how each feature contributes to individual predictions
 
 ## Project Structure
 
@@ -155,8 +155,11 @@ docker build -t diabetes-prediction-model .
 docker run -p 5000:5000 diabetes-prediction-model
 ```
 
-### Cloud Deployment
-The application can be deployed to cloud platforms like Heroku, AWS, or Google Cloud Platform.
+### Cloud Deployment (Render)
+The application is pre-configured for 1-click deployment on [Render](https://render.com). 
+1. Push your code to GitHub.
+2. In the Render dashboard, click **New +** -> **Blueprint**.
+3. Connect your repository. Render will automatically read the `render.yaml` file and deploy the app on their free tier.
 
 ## Limitations and Future Improvements
 
