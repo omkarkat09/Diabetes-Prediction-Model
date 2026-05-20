@@ -147,7 +147,7 @@ def get_prediction_explanation(data, model=None, scaler=None):
     # Sort contributions by absolute value
     sorted_contributions = sorted(
         contributions.items(), 
-        key=lambda x: abs(x[1]), 
+        key=lambda x: abs(x[1]),
         reverse=True
     )
     
@@ -177,7 +177,7 @@ if __name__ == "__main__":
     prediction, probability = predict_single(test_data)
     print(f"Prediction: {'Diabetic' if prediction == 1 else 'Non-diabetic'}")
     print(f"Probability of diabetes: {probability:.4f}")
-    
+
     explanation = get_prediction_explanation(test_data)
     print("\nFeature contributions:")
     for feature, contribution in explanation['contributions'].items():

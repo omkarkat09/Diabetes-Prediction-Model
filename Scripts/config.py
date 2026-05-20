@@ -2,10 +2,15 @@
 Configuration settings for the Diabetes Prediction Model.
 """
 
+import os
+
+# Base directory (project root)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Data paths
-DATA_PATH = "../data/diabetes.csv"
-MODEL_PATH = "../models/random_forest_model.pkl"
-SCALER_PATH = "../models/scaler.pkl"
+DATA_PATH = os.path.join(BASE_DIR, "Data", "diabetes.csv")
+MODEL_PATH = os.path.join(BASE_DIR, "Models", "random_forest_model.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "Models", "scaler.pkl")
 
 # Model parameters
 RANDOM_STATE = 42
@@ -35,7 +40,9 @@ FEATURE_NAMES = [
 # Target column name
 TARGET_COLUMN = 'Outcome'
 
+import os
+
 # Flask app settings
 HOST = '0.0.0.0'
-PORT = 5000
-DEBUG = True
+PORT = int(os.environ.get('PORT', 5000))
+DEBUG = os.environ.get('DEBUG', 'False').lower() in ('true', '1', 't')
