@@ -1,6 +1,6 @@
 # Diabetes Prediction Model
 
-A machine learning application that predicts diabetes risk based on health parameters, developed for a Novo Nordisk internship application.
+A machine learning application that predicts diabetes risk based on health parameters. 
 
 ## Project Overview
 
@@ -23,6 +23,7 @@ DiabetesPredictionModel/
 │   ├── random_forest_model.pkl  # Trained Random Forest model
 │   └── scaler.pkl         # Fitted StandardScaler
 ├── scripts/               # Python modules
+│   ├── __init__.py
 │   ├── config.py          # Configuration settings
 │   ├── preprocess.py      # Data preprocessing functions
 │   ├── train_model.py     # Model training and evaluation
