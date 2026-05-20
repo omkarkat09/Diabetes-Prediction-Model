@@ -12,4 +12,3 @@ venv/
 # Ignore large data files (optional)
 Data/Raw/
 Data/Processed/
-Models/
