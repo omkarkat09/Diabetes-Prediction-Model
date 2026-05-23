@@ -1,4 +1,4 @@
-# Diabetes Prediction Model
+# DiaPredict
 
 A machine learning application that predicts diabetes risk based on health parameters. 
 
